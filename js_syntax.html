@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //변수 및 연산자
+        let favoriteArtist = "Lauv";
+        console.log(favoriteArtist);
+
+        const c = 2022;
+        const d = "올해는 호랑이의 해";
+
+        console.log(c+d);
+
+        const andOperator = true && false;
+        console.log(andOperator)
+
+        const a = 1;
+        if (a+1 === 2){
+            console.log("a+1은 2입니다.");
+        } else {
+            console.log("a+1은 2가 아닙니다.")
+        }
+
+        //조건문, 반복문
+
+        let month = 7;
+        if (month >= 3 && month <= 5){
+            console.log("지금은 봄");
+        } else if (month >= 6 && month <= 8){
+            console.log("지금은 여름")
+        } else {
+            console.log("봄도 여름도 아님")
+        }
+        
+        let i = 1;
+        while(i <= 10){
+            console.log(i);
+            i++;
+        }
+
+        for (let j = 1; j <= 10; j++){
+            console.log(j);
+            if (j== 6) break;
+        }
+
+        for(let k = 1; k <= 10; k++){
+            if (k % 2 == 0) continue;
+            console.log(k);
+        }
+
+        //함수
+
+        const ab = 1;
+        const b = 2;
+        function add(num1, num2){
+            return num1 + num2
+        }
+
+        const sum1 = add(100,200);
+        console.log(sum1);
+
+        function hello(name){
+            console.log(`Hello ${name}!`);
+
+        }
+        hello("chaerim");
+
+        function getGrade(score){
+            if (score === 100){
+                return 'A';
+            } else if (score >= 90){
+                return 'B';
+            } else if (score >= 80){
+                return 'C';
+            } else if (score >= 70){
+                return 'D';
+            } else {
+                return 'F';
+            }
+        }
+
+        const grade = getGrade(95);
+        console.log(grade);
+
+        //객체 : 하나의 변수 안에 여러 정보를 담음
+        const sample = {
+            'key with space' : true
+        };
+
+        const likelion = {
+            name : '멋쟁이 사자처럼',
+            age : 10
+        }
+        console.log(likelion);
+
+        //배열
+        const numArray = [1,2,3,4,5,6];
+
+        //배열안에 객체 넣기 가능
+        const object = [
+        {name : '멋쟁이'},
+        {name : '사자처럼'}
+        ];
+
+        console.log(object[0]);
+
+        //배열에 새 항목 추가
+        object.push(
+        {name : '자바스크립트'}
+        );
+
+        console.log(object);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -12,3 +12,63 @@
 .yellow {
     background-color: rgb(255, 255, 124);
 }
+
+.bar {
+    width : 100%;
+    height : 50px;
+    background-color: rgb(178, 178, 255);
+    text-align: center;
+    padding-top : 20px;
+}
+
+.newBar {
+    width : 100%;
+    height : 50px;
+    background-color: rgb(255, 201, 100);
+    text-align: center;
+    padding-top : 20px;
+    display : none;
+}
+
+ul.list {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+    border-bottom : 1px solid #ccc;
+}
+
+ul.list::after {
+    content : "";
+    display : block;
+    clear : both;
+}
+
+.tab-button {
+    display : block;
+    padding : 10px 20px 10px 20px;
+    float : left;
+    margin-right : -1px;
+    margin-bottom : -1px;
+    color : grey;
+    text-decoration: none;
+    cursor : pointer;
+}
+
+.tab-content {
+    display : none;
+    padding : 10px;
+}
+
+.show {
+    display : block;
+}
+
+
+.here{
+    border-top : 1px solid white;
+    border-left : 1px solid white;
+    border-right : 1px solid white;
+    border-bottom : 2px solid #ff9e1b;
+    color : black;
+    margin-top : -2px;
+}

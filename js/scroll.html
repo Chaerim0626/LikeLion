@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .blue {
+            width : 0px;
+            height : 5px;
+            background-color: rgb(92, 100, 254);
+        }
+        .lyrics {
+            width : 250px;
+            height : 150px;
+            overflow-y: scroll;
+            background-color: rgb(192, 224, 255);
+        }
+    </style>
+    <div class="blue"></div>
+    <div class = "lyrics">
+        <p>
+            I'm getting rid of my clothes I don't wear
+            I think I'm gonna cut my hair
+            'Cause these days I don't feel like me, mm
+            I think I'm gonna take a break from alcohol
+            Probably won't last that long
+            But Lord knows I could use some sleep, mm
+            Changes, they might drive you half-insane
+            But it's killing you to stay the same
+            But it's all gonna work out, it's all gonna work out someday
+            Moments, livin' with your eyes half-open
+            You've been thinking 'bout these changes
+            It's all gonna work out, it's all gonna work out someday
+            I think I'm gonna take some pills to fix my brain
+            'Cause I tried every other way
+            But some things you can't fix yourself
+            But he said that he's doing the same thing over and over
+            And life ain't easy these days, no, life ain't easy these days
+            Changes, they might drive you half-insane (Changes)
+            But it's killing you to stay the same (Changes)
+            But it's all gonna work out, it's all gonna work out someday (Work out someday)
+            Moments, livin' with your eyes half-open (Eyes half-open)
+            You've been thinking 'bout these changes (Changes)
+            It's all gonna work out, it's all gonna work out someday
+            Na-na-na-na-na-na-na
+            Na-na-na-na-na-na
+            Na-na-na-na-na-na-na
+            Na-na-na-na-na-na
+            Na-na-na-na-na-na-na
+            Na-na-na-na-na-na
+            Na-na-na-na-na-na-na
+            Na-na-na-na-na-na
+            Changes, they might drive you half-insane
+            But it's killing you to stay the same
+            But it's all gonna work out, it's all gonna work out someday (Someday)
+            Moments, living with your eyes half-open (Half-open)
+            You've been thinking 'bout these changes (Changes)
+            It's all gonna work out, it's all gonna work out someday
+        </p>
+
+    </div>
+    <script>
+        let bar = document.querySelector('.blue');
+        let lyric = document.querySelector(".lyrics");
+
+        lyric.addEventListener("scroll", function() {
+            let scrollTop = lyric.scrollTop;
+            let scrollHeight = lyric.scrollHeight - lyric.clientHeight;
+            let per = scrollTop / scrollHeight;
+            bar.style.width = `${per*250}px`;
+        });
+    </script>
+</body>
+</html>

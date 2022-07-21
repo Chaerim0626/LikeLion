@@ -1,0 +1,25 @@
+
+
+#main {
+    background-color: whitesmoke;
+    text-align: center;
+    width : 80%;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.startBtn {
+    border : 3px solid skyblue;
+    color : skyblue;
+    border-radius: 8px;
+    padding: 13px 50px;
+
+}
+
+.startBtn:hover, .startBtn:active {
+    background-color: skyblue;
+    color : whitesmoke;
+}
